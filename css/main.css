@@ -1,0 +1,858 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+/*header*/
+
+header {
+    background: #0072bc;
+}
+
+.tm-name {
+    float: right;
+    width: 60%;
+    max-width: 60%;
+    position: relative;
+}
+
+.tm-pic {
+    float: left;
+    width: 40%;
+    max-width: 40%;
+    position: relative;
+}
+
+header::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.name {
+    padding: 8% 21% 0% 0%;
+}
+
+.name #sp {
+    font-size: 5vw;
+    padding-bottom: 2%;
+}
+
+.name p {
+    font-size: 2vw;
+    color: #fff;
+    text-align: right;
+}
+
+.mail {
+    padding-top: 5%;
+    text-align: right;
+    padding-bottom: 2%;
+    padding-right: 21%;
+}
+
+.mail p {
+    font-size: 1.3vw;
+    color: #fff;
+}
+
+.mail img {
+    max-width: 3%;
+    width: 3%;
+}
+
+.mail * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+#left img {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 8%;
+    max-width: 8%;
+}
+
+#right img {
+    position: absolute;
+    top: 40%;
+    left: 84%;
+    width: 8%;
+    max-width: 8%;
+}
+
+.tm-pic img {
+    position: absolute;
+    width: 70%;
+    max-width: 70%;
+    margin: 5% 18%;
+}
+.dissapear{
+display: block;
+    position: absolute;
+    top: 1%;
+    right: -20%;
+    padding: 1% 3%;
+    font-size: 1.2vw;
+    background: #fff;
+    color: #0072bc;
+    border-radius: 30px 0 0 30px;
+    transition: right 0.5s;
+}
+.appear{
+   right: 0% !important; 
+    transition: right 0.5s;
+}
+
+/*About me*/
+
+.about{
+    float: right;
+    width : 70%;
+    max-width: 70%;
+    padding:  5% 4% 0% 0%;
+}
+
+.tm-about::after{
+    clear: right;
+    content: " ";
+    display: block;
+}
+
+.about p{
+    text-align: justify;
+    font-size: 2vw;
+    color: #0072bc;
+}
+
+#title1{
+    text-align: right ;
+    font-size: 4vw ;
+    font-weight: 700;
+    padding-bottom: 2%;
+    color:   #0072bc;
+}
+
+
+/*Projects*/
+
+
+
+
+#title2,#title3,#title4,#title5{
+    padding: 10% 0 2% 4%;
+    text-align: left ;
+    font-size: 4vw ;
+    font-weight: 700;
+   
+    color:   #0072bc;
+}
+#blank{
+   margin-top: 20%;
+}
+
+
+.tm-images img{
+    width:100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 8px solid #0072bc;
+    border-radius: 25px;
+    
+}
+
+.tm-images a{
+    width:70%;
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+  
+    
+}
+
+
+
+/* SLider */
+.tm-project{
+    position: relative;
+}
+
+.left{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    padding: 10% 0;
+    width: 4%;
+    max-width: 4%;
+}
+
+.right{
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    padding: 10% 0;
+     width: 4%;
+    max-width: 4%;
+}
+
+/* dots */
+.slick-dots{
+   text-align: center;
+}
+.slick-dots li{
+    display: inline-block;
+    padding: 1% 1% 2% 1%;
+  
+}
+.slick-dots button{
+    border: 1px solid;
+    color: transparent;
+    width: 200%;
+    background: rgba(0, 114, 188,0.5);
+    border-radius: 50%;
+}
+
+.slick-dots button:focus{
+    outline:none;
+}
+
+.slick-dots button:hover{
+    background: rgba(0, 114, 188,1);
+}
+
+.slick-active button{
+    background: rgba(0, 114, 188,1);
+}
+
+
+
+/*skills*/
+.skill{
+    display: inline-block;
+     width: 38%;
+    max-width: 38%;
+    padding: 2% 5%;
+}
+
+.skill>img{
+     display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+}
+.skillrate{
+    position: relative;
+    display: inline-block;
+    width: 65%;
+    vertical-align: middle;
+        padding: 5%;
+}
+.skillrate p{
+     font-size: 2.5vw;
+    color: #0072bc;
+    padding-bottom: 3%;
+}
+.skillrate img{
+    
+    width:70%;
+}
+
+.rating img{
+    display: inline-block;
+    width:13%;
+}
+
+
+.image-class1,.image-class2,.image-class3,.image-class4,.image-class5{
+    opacity: 0;
+}
+
+.source-change{
+    opacity: 1;
+    animation: source 200ms;
+}
+@keyframes source {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+/*profiles*/
+.tm-profiles{
+     position: relative;
+}
+.profiles{
+    text-align: center;
+    padding: 10% 5% 2% 5%;
+     
+}
+
+.profiles img{
+    width: 14%;
+    max-width: 14%;
+    margin: 0 2%;
+     position: absolute;
+     top: 93.3%;
+     transition: top 400ms;
+    padding-bottom: 10%;
+}
+
+.profiles .img1{
+   left: 22.7%;
+}
+.profiles .img2{
+    left:41%;
+}
+.profiles .img3{
+        left: 59.3%;
+}
+
+.behind{
+       width: 100%;
+    text-align: center;
+    padding: 10% 5% 2% 5%;
+    z-index: -1;
+    position: absolute;
+    left: -5%;  
+   
+}
+.behind img{
+   width: 14%;
+    max-width: 14%;
+    margin: 0 2%;
+    
+}
+
+.profiles img:hover{
+    top:55%;
+   
+}
+/*contact */
+.tm-contact .main{
+        font-size: 2vw;
+    margin-left: 21%;
+    color: #0072bc;
+}
+.tm-contact .center{
+        font-size: 2vw;
+    text-align: center;
+    color: #0072bc;
+}
+
+form{
+    position: relative;
+    width: 30%;
+    max-width: 30%;
+      margin: 0 auto;
+}
+
+input, select, textarea,
+input::-webkit-input-placeholder {
+   
+    font-size: 2vw;
+}
+
+input, select, textarea{
+    color: #fff;
+}
+input:focus, textarea:focus{
+    color: #0072bc;
+    background-color: #fff !important;
+    border: 2px solid #0072bc !important;
+}
+input::-webkit-input-placeholder{
+    color: #fff;
+}
+
+textarea::-webkit-input-placeholder{
+    color: #fff;
+}
+input[type=text],input[type=email],textarea{
+    display: block;
+    margin: 5% 5% 5% 0;
+    padding: 2% 10%;
+    width: 80%;
+     background: #0072bc; 
+   border: 2px solid #0072bc;
+    border-radius: 20px;
+   
+}
+
+
+input[type=text]:focus ,input[type=email]:focus ,textarea:focus{
+    outline: none;
+}
+
+textarea {
+    max-width: 80% ;
+    resize: none;
+    border: 2px solid #0072bc;
+}
+
+input[type=submit]{
+    position: absolute;
+       top: 76%;
+    left: 110%;
+    display: block;
+    background: #fff;
+    padding: 2% 5%;
+     color: #0072bc; 
+    border: 5px solid #0072bc; 
+    border-radius: 20px;
+    font-weight: 700;
+ 
+
+}
+input[type=submit]:hover{
+    color: #fff;
+    background: #0072bc; 
+}
+
+input[type=submit]:focus{
+    outline: none;
+}
+
+.social{
+   text-align: center;
+    padding: 1% 5%;
+}
+
+
+.social a{
+    text-decoration: none !important;
+}
+.social img{
+    width: 7%;
+    padding: 0 1%;
+    max-width: 7%;
+}
+
+
+
+
+
+#scrollUp {
+  bottom: 15px;
+    right: 50px;
+    padding: 1%;
+    border: 3px solid;
+    color: #0072bc;
+    opacity: 0.7;
+    border-radius: 50%;
+    font-size: 2vw;
+    width: 2%;
+    text-align: center;
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+
+
+
+/*media queries*/
+
+@media all and (max-width: 991px) {
+    .mail p {
+        font-size: 1.4vw;
+    }
+    .name #sp {
+        font-size: 5.1vw;
+    }
+    .name p {
+        font-size: 2.1vw;
+    }
+     .about p{
+        font-size: 2.2vw;
+    }
+
+    #title1{
+        font-size: 4.2vw ;
+    }
+    
+   
+.slick-dots li{
+    display: inline-block;
+    padding: 1% 2% 2% 2%;
+  
+}
+    
+    
+.profiles .img1{
+   left: 22.5%;
+}
+.profiles .img2{
+    left:41%;
+}
+.profiles .img3{
+        left: 59.5%;
+}
+    
+    
+.social img{
+    width: 10%;
+    max-width: 10%;
+}
+.tm-contact .main,.tm-contact .center{
+        font-size: 2.3vw;
+ 
+}
+input, select, textarea,
+input::-webkit-input-placeholder {
+   
+    font-size: 2.3vw;
+}
+ input[type=text],input[type=email],textarea{
+    padding: 2% 10%;
+    width: 90%;
+   
+}
+textarea {
+    max-width: 90% ;
+    }
+input[type=submit]{
+    padding: 2% 5%;
+    top: 76%;
+    left: 120%;
+}
+    form{
+        width: 35%;
+        max-width: 35%;
+    } 
+    
+#scrollUp {
+  bottom: 15px;
+    right: 50px;
+    font-size: 3vw;
+    width: 3%;
+   
+}
+
+.dissapear{
+    top: 1%;
+    right: -20%;
+    padding: 1% 3%;
+    font-size: 1.5vw;
+}   
+   
+}
+
+@media all and (max-width: 768px) {
+    .mail p {
+        font-size: 1.5vw;
+    }
+    .name #sp {
+        font-size: 5.1vw;
+    }
+    .name p {
+        font-size: 2.1vw;
+    }
+    
+    .about p{
+        font-size: 2.5vw;
+    }
+
+    #title1{
+        font-size: 4.5vw ;
+    }
+   .slick-dots li{
+    display: inline-block;
+    padding: 1% 2% 2% 2%;
+  
+}
+    .tm-contact .main,.tm-contact .center{
+        font-size: 2.5vw;
+ 
+}
+    input, select, textarea,
+input::-webkit-input-placeholder {
+   
+    font-size: 2.5vw;
+}
+   form{
+        width: 35%;
+        max-width: 35%;
+    } 
+    
+  .social img{
+    width: 12%;
+    max-width: 12%;
+}  
+}
+
+@media all and (max-width: 600px) {
+ 
+    
+    
+    .profiles .img1{
+   left: 19.3%;
+    }
+    .profiles .img2{
+        left:40%;
+    }
+    .profiles .img3{
+            left: 60.7%;
+    }
+    
+    
+    .profiles img:hover{
+    opacity: 0;
+   top: 93.3%;
+    }
+    .profiles img{
+         opacity: 1;
+    transition: opacity 400ms;
+    }
+      .profiles img{
+    width: 16%;
+    max-width: 16%;
+    }
+    
+    .behind img{
+   width: 16%;
+    max-width: 16%;
+    }
+    .tm-contact .main,.tm-contact .center{
+        font-size: 2.8vw;
+ 
+}
+    input, select, textarea,
+input::-webkit-input-placeholder {
+   
+    font-size: 2.8vw;
+}
+    input[type=text],input[type=email],textarea{
+   
+    width: 90%;
+   
+}
+textarea {
+    max-width: 90% ;
+    }
+    
+input[type=submit]{
+    top: 76%;
+    left: 130%;
+}
+    form{
+        width: 40%;
+        max-width: 40%;
+    }
+    .social img{
+    width: 13%;
+    max-width: 13%;
+} 
+    #scrollUp {
+  bottom: 15px;
+    right: 50px;
+    font-size: 4vw;
+    width: 4%;
+   
+}
+    
+
+    .dissapear{
+    top: 0.6%;
+    right: -20%;
+    padding: 1% 3%;
+    font-size: 1.5vw;
+        
+}  
+
+}
+
+
+@media all and (max-width: 480px) {
+    .mail p {
+        font-size: 2.2vw;
+    }
+    .mail {
+        text-align: center;
+        padding-right: 0%;
+    }
+    .tm-name {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+    .name {
+        padding: 4% 0% 0% 0%;
+    }
+    .name p {
+        text-align: center;
+    }
+    .name #sp {
+        font-size: 7vw;
+    }
+    .name p {
+        font-size: 3vw;
+    }
+    .tm-pic {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        background: #015a93;
+    }
+    .tm-pic img {
+        position: relative;
+        width: 70%;
+        max-width: 70%;
+    }
+    
+    
+    
+    
+    .about{
+    float: none;
+    width : 75%;
+    max-width: 75%;
+   padding: 0%;
+        padding-top: 5%;
+        margin: 0 auto;
+    }
+
+
+    .about p{
+        text-align: justify;
+        font-size: 3.5vw;
+        color: #0072bc;
+    }
+
+    #title1,#title2,#title3,#title4,#title5{
+        text-align: center;
+        font-size: 6vw ;
+        font-weight: 700;
+        padding: 10% 0 2% 0; 
+        color:   #0072bc;
+    }
+    
+    
+    
+    .slick-dots li {
+       display: none;
+   }
+   
+   .left{
+     display: none;
+    }
+
+    .right{
+    display: none;
+    }
+
+    .tm-images img{
+    width:100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 8px solid #0072bc;
+    border-radius: 25px;
+    
+    }
+
+    .tm-images a{
+        width:90%;
+        max-width: 90%;
+        padding-right: 4%;
+        display: block;
+        margin: 0 auto;
+
+
+    }
+  
+    .skill{
+    display: block;
+     width: 60%;
+    max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .skillrate p{
+         font-size: 4vw;
+        
+    }
+    
+
+ .profiles .img1{
+   left: 16.1%;
+    }
+    .profiles .img2{
+        left:39%;
+    }
+    .profiles .img3{
+            left: 61.9%;
+    }
+    
+    .profiles img{
+    width: 18%;
+    max-width: 18%;
+    }
+    
+    .behind img{
+   width: 18%;
+    max-width: 18%;
+    }
+.tm-contact .main,.tm-contact .center{
+        font-size: 3.5vw;
+        margin: 0;
+        text-align: center;
+ 
+}
+    
+       input, select, textarea,
+input::-webkit-input-placeholder {
+   
+    font-size:3.5vw;
+}
+    input[type=text],input[type=email],textarea{
+   
+    width: 90%;
+   
+}
+textarea {
+    max-width: 90% ;
+    }
+    
+input[type=submit]{
+    position: relative;
+    top: 76%;
+    left:35%;
+    margin-bottom: 2%;
+}
+    
+    form{
+        width: 50%;
+        max-width: 50%;
+    }
+    .social img{
+    width: 16%;
+    max-width: 16%;
+}  
+    .dissapear{
+    top: 0.6%;
+    right: -30%;
+    padding: 1% 3%;
+    font-size: 2vw;
+}  
+       #scrollUp {
+  bottom: 15px;
+    right: 30px;
+    font-size: 4vw;
+    width: 4%;
+   
+}
+}
